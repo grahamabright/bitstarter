@@ -2,7 +2,7 @@ var express = require('express');
 var fs = require('fs');
 var app = express.createServer(express.logger());
 
-var webText = fs.readFileSync(index.html, { encoding: null})
+var webText = fs.readFileSync('index.html', { encoding: null})
 app.get('/', function(request, response) {
   response.send(webText);
 });
